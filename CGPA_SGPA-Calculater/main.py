@@ -65,6 +65,29 @@ def findSem():
 def findTotal():
     return findCIE() + findSem()
 
+def findGrade(sub_Total,sub_Credit):
+    grade = "#"
+    if(sub_Total >= 0 and sub_Total <= 100):
+        if(sub_Total > 90 and sub_Total <= 100):
+            grade = "O"
+        elif(sub_Total > 80 and sub_Total <= 90):
+            grade = "A+"
+        elif(sub_Total > 70 and sub_Total <= 80):
+            grade = "A"
+        elif(sub_Total > 60 and sub_Total <= 70):
+            grade = "B+"
+        elif(sub_Total > 50 and sub_Total <= 60):
+            grade = "B"
+        elif(sub_Total > 40 and sub_Total <= 50):
+            grade = "C+"
+        elif(sub_Total > 35 and sub_Total <= 40):
+            grade = "C"
+        else:
+            grade = "F"
+    
+    return grade
+
+
 print("--- Well Come To CGPA, SGPA Marks Calculater ---")
 no_sub = int(input("How Meny Subject You Have : "))
 
