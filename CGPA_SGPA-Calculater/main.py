@@ -93,7 +93,7 @@ no_sub = int(input("How Meny Subject You Have : "))
 
 for i in range(0,no_sub):
     sub = []
-    sub_name = input("Enter Subject Name : ")
+    sub_name = input("\nEnter Subject Name : ")
     sub.append(sub_name)
     sub_Credit = int(input("\tSubject Credite : "))
     sub.append(sub_Credit)
@@ -103,3 +103,6 @@ for i in range(0,no_sub):
     sub.append(sub_Grade)
 
     SemMarks.append(sub)
+
+
+print(SemMarks)
